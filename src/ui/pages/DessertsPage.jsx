@@ -10,20 +10,20 @@ const DessertsPage = () => {
   });
 
   const desserts = [
-    { id: 1, name: "Tarta de Queso", category: "tartas", difficulty: "media" },
-    { id: 2, name: "Arroz con leche", category: "cremas y flanes", difficulty: "media" },
-    { id: 3, name: "Tartaleta de manzana", category: "pasteles", difficulty: "difícil" },
-    { id: 4, name: "Fayueles", category: "dulce típico", difficulty: "fácil" },
-    { id: 5, name: "Casadielles", category: "dulce típico", difficulty: "media" },
-    { id: 6, name: "Compota de manzana", category: "cremas y flanes", difficulty: "fácil" },
-    { id: 7, name: "Tocinillo", category: "cremas y flanes", difficulty: "difícil" },
-    { id: 8, name: "Picatostes", category: "dulce típico", difficulty: "fácil" },
-    { id: 9, name: "Borrachinos", category: "pasteles", difficulty: "media" },
-    { id: 10, name: "Tarta de sidra", category: "tartas", difficulty: "media" },
-    { id: 11, name: "Tarta de nuez", category: "tartas", difficulty: "fácil" },
-    { id: 12, name: "Carbayones", category: "pasteles", difficulty: "media" },
-    { id: 13, name: "Suspiros", category: "galletas", difficulty: "fácil" },
-    { id: 14, name: "Cubiletes", category: "pasteles", difficulty: "difícil" },
+    { id: 1, key: "tarta_queso", name: "Tarta de Queso", category: "tartas", difficulty: "media" },
+    { id: 2, key: "arroz_con_leche", name: "Arroz con leche", category: "cremas y flanes", difficulty: "media" },
+    { id: 3, key: "tartaleta_manzana", name:"Tartaleta de manzana", category: "pasteles", difficulty: "difícil" },
+    { id: 4, key: "fayueles", name: "Fayueles", category: "dulce típico", difficulty: "fácil" },
+    { id: 5, key: "casadielles", name: "Casadielles", category: "dulce típico", difficulty: "media" },
+    { id: 6, key: "compota_manzana", name: "Compota de manzana", category: "cremas y flanes", difficulty: "fácil" },
+    { id: 7, key: "tocinillo", name: "Tocinillo", category: "cremas y flanes", difficulty: "difícil" },
+    { id: 8, key: "picatostes", name: "Picatostes", category: "dulce típico", difficulty: "fácil" },
+    { id: 9, key: "borrachinos", name: "Borrachinos", category: "pasteles", difficulty: "media" },
+    { id: 10, key: "tarta_sidra", name: "Tarta de sidra", category: "tartas", difficulty: "media" },
+    { id: 11, key: "tarta_nuez", name: "Tarta de nuez", category: "tartas", difficulty: "fácil" },
+    { id: 12, key: "carbayones", name: "Carbayones", category: "pasteles", difficulty: "media" },
+    { id: 13, key: "suspiros", name: "Suspiros", category: "galletas", difficulty: "fácil" },
+    { id: 14, key: "cubiletes", name: "Cubiletes", category: "pasteles", difficulty: "difícil" },
   ];
 
   const filteredDesserts = desserts.filter((d) => {

@@ -1,14 +1,11 @@
 import React from "react";
+import { images } from "../assets/images";
 import "../css/DessertCard.css"; // CSS específico de la tarjeta
 
 const DessertCard = ({ dessert }) => {
   return (
     <div className="dessert-card">
-      <img
-        src={dessert.img} 
-        alt={dessert.name}
-        className="dessert-image"
-      />
+      <img src={images[dessert.key]} alt={dessert.name} />
       <h3>{dessert.name}</h3>
       <p>Categoría: {dessert.category}</p>
       <p>Dificultad: {dessert.difficulty}</p>
