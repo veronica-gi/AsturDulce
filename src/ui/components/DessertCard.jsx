@@ -1,12 +1,21 @@
 import React from "react";
+import "../css/DessertCard.css"; // CSS específico de la tarjeta
 
-const DessertCard = ({ name = "Postre", description = "Descripción breve" }) => {
+const DessertCard = ({ dessert }) => {
   return (
     <div className="dessert-card">
-      <h3>{name}</h3>
-      <p>{description}</p>
+      <img
+        src={dessert.img} 
+        alt={dessert.name}
+        className="dessert-image"
+      />
+      <h3>{dessert.name}</h3>
+      <p>Categoría: {dessert.category}</p>
+      <p>Dificultad: {dessert.difficulty}</p>
+      <button>❤️ Favorito</button>
     </div>
   );
 };
 
 export default DessertCard;
+
