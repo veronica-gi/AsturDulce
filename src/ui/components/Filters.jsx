@@ -17,9 +17,10 @@ const Filters = ({ filters, setFilters }) => {
         <select value={filters.category} onChange={handleCategoryChange}>
           <option value="todas">Todas</option>
           <option value="tartas">Tartas</option>
-          <option value="cremas y flanes">Flanes</option>
-          <option value="pasteles">Chocolate</option>
-          <option value="galletas">Chocolate</option>
+          <option value="cremas y flanes">Cremas y Flanes</option>
+          <option value="pasteles">Pasteles</option>
+          <option value="galletas">Galletas</option>
+          <option value="dulce típico">Dulce típico</option>
         </select>
       </label>
 
