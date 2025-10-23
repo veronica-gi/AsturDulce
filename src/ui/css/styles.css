@@ -14,3 +14,64 @@ h1, h2, h3 {
   font-weight: 100px;
   color: #0e0d0d;
 }
+
+.fixed-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 400px;
+  perspective: 1200px; 
+  gap: -40%;
+  position: relative;
+  overflow: visible;
+  background-color: #c78080;
+}
+
+.image-wrapper {
+  margin-top: 5px;
+  flex: 0 0 40%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Central recta y grande */
+.image-wrapper.center {
+  flex: 0 0 50%;
+  z-index: 2;
+  transform: scale(1) rotateY(0deg); 
+}
+
+/* Laterales inclinadas */
+.image-wrapper.left {
+  transform: scale(0.7) rotateY(60deg) translateX(-2%);
+  z-index: 1;
+}
+
+.image-wrapper.right {
+  transform: scale(0.7) rotateY(-60deg) translateX(2%);
+  z-index: 1;
+}
+
+/* Imágenes */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Texto sobre la central */
+.image-text {
+  position: absolute;
+  bottom: 250px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  
+}

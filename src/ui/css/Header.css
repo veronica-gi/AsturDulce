@@ -3,14 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffdfd3;
+  background-color: #161413;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo h1 {
   margin: 0;
   font-size: 1.8rem;
-  color: #a83232;
+  color: #dac8c8;
 }
 
 .nav ul {
@@ -23,10 +23,10 @@
 
 .nav a {
   text-decoration: none;
-  color: #a83232;
+  color: #fafafa;
   font-weight: bold;
 }
 
 .nav a:hover {
-  color: #ff6f61;
+  color: #f1eded;
 }
