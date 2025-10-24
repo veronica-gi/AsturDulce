@@ -1,6 +1,7 @@
 import React from "react";
 import { images } from "../assets/images";
-import "../css/DessertCard.css"; // CSS específico de la tarjeta
+import "../css/DessertCard.css"; 
+
 
 const DessertCard = ({ dessert }) => {
   return (

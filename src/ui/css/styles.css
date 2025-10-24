@@ -66,7 +66,7 @@ h1, h2, h3 {
 /* Texto sobre la central */
 .image-text {
   position: absolute;
-  bottom: 250px;
+  bottom: 200px;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -75,3 +75,34 @@ h1, h2, h3 {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
   
 }
+
+.welcome-section {
+  max-width: 900px;         
+  margin: 2rem auto;        
+  padding-left: 0.5rem;      
+  text-align: left;          
+  line-height: 1.5;           
+}
+
+.welcome-section h1 {
+  font-size: 1.8rem;
+  color: #5a3825;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  color: #3b2a1a;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-section p:last-child {
+  font-weight: 500;
+  color: #d16c5e;
+     text-align: center;
+  
+}
+
+
+
+
