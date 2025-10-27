@@ -1,5 +1,29 @@
  export const desserts = [
-    { id: 1, key: "tarta_queso", name: "Tarta de Queso", category: "Tartas", difficulty: "Media" },
+    { id: 1, 
+        key: "tarta_queso", 
+        name: "Tarta de Queso", 
+        category: "Tartas", 
+        difficulty: "Media", 
+        description: "La tarta de queso Afuega’l Pitu es un postre tradicional asturiano, suave y cremoso, elaborado con el característico queso Afuega’l Pitu. Su sabor delicado y ligeramente ácido lo convierte en un postre único, perfecto para acompañar con mermeladas de frutas del bosque o miel.",
+        ingredientes: [
+      "500 g de queso crema",
+      "3 huevos",
+      "200 g de azúcar",
+      "100 g de galletas",
+      "50 g de mantequilla",
+    ],  
+        fullRecipe: [
+            "Paso 1: Precalienta el horno a 180 °C y engrasa un molde redondo con mantequilla",
+            "Paso 2: En un bol grande, bate los huevos con el azúcar hasta obtener una mezcla espumosa.",
+            "Paso 3: Añade el queso Afuega’l Pitu desmenuzado y mezcla bien hasta conseguir una textura homogénea.",
+            "Paso 4: Incorpora la nata y la esencia de vainilla, mezclando suavemente.",
+            "Paso 5: Vierte la mezcla en el molde y hornea durante 40–45 minutos, hasta que la superficie esté dorada y el centro firme al tacto.",
+            "Paso 6: Deja enfriar la tarta a temperatura ambiente y, luego, refrigérala al menos 2 horas antes de servir.",
+            "Paso 7: Decora con mermelada o miel al gusto antes de disfrutar."
+        ],
+    },
+    
+    
     { id: 2, key: "arroz_con_leche", name: "Arroz con leche", category: "Cremas y Flanes", difficulty: "Media" },
     { id: 3, key: "tartaleta_manzana", name:"Tartaleta de manzana", category: "Pasteles", difficulty: "Difícil" },
     { id: 4, key: "fayueles", name: "Fayueles", category: "Dulce Típico", difficulty: "Fácil" },
