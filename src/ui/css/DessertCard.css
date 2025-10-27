@@ -29,3 +29,10 @@
   color: #555;
 }
 
+.dessert-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* máximo 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

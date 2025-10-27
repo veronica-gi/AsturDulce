@@ -5,17 +5,26 @@ import "../css/DessertCard.css";
 
 
 const DessertCard = ({ dessert }) => {
+  
+  const shortDescription = (dessert.description || "")
+  .slice(0, 120)
+  .concat((dessert.description || "").length > 120 ? "..." : "");
+
+
+
   return (
     <div className="dessert-card">
       <img src={images[dessert.key]} alt={dessert.name} />
       <h3>{dessert.name}</h3>
-       <p>{dessert.description}</p>
+       <p className="dessert-description">{shortDescription}</p>
       <p>Categoría: {dessert.category}</p>
       <p>Dificultad: {dessert.difficulty}</p>
+      <div className="card-buttons">
       <button>❤️ Favorito</button>
       <Link to={`/recipe/${dessert.id}`}>
         <button>Leer más</button>
       </Link>
+    </div>
     </div>
   );
 };
