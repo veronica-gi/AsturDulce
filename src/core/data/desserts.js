@@ -5,6 +5,13 @@
         category: "Tartas", 
         difficulty: "Media", 
         description: "La tarta de queso Afuega’l Pitu es un postre tradicional asturiano, suave y cremoso, elaborado con el característico queso Afuega’l Pitu. Su sabor delicado y ligeramente ácido lo convierte en un postre único, perfecto para acompañar con mermeladas de frutas del bosque o miel.",
+        info: [
+      "Tiempo de preparación: 20 minutos",
+      "Tiempo de preparación: 45 minutos",
+      "Raciones: 8",
+    
+    ], 
+       
         ingredientes: [
       "500 g de queso crema",
       "3 huevos",

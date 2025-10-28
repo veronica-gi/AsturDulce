@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: 'Arial', sans-serif;
+  line-height: 1.6;
 }
 
 .recipe-page h1 {
@@ -12,47 +13,98 @@
   color: #d66152; 
 }
 
-.recipe-page .recipe-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .recipe-page img {
   max-width: 100%;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.recipe-page .recipe-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+/* 🔹 Sección de información general */
+/* 🔹 Información (tiempos, raciones, etc.) */
+.recipe-info {
+  background-color: #fff7f2;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.recipe-page .recipe-info p {
+.recipe-info h3 {
+  color: #d66152;
+  border-bottom: 2px solid #d66152;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-list li {
   background-color: #fff0e0;
   padding: 10px;
   border-radius: 5px;
-  flex: 1 1 45%;
+  margin-bottom: 8px;
 }
 
-.recipe-page .recipe-steps {
-  margin-top: 20px;
+
+/* 🔹 Ingredientes */
+.recipe-ingredients {
+  background-color: #fff7f2;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.recipe-page .recipe-steps h2 {
+.recipe-ingredients h3 {
+  color: #d66152;
+  border-bottom: 2px solid #d66152;
+  padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-.recipe-page .recipe-steps ol {
+.ingredients-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ingredients-list li {
+  margin-bottom: 8px;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.ingredients-list li::before {
+  content: "•";
+  color: #d66152;
+  position: absolute;
+  left: 0;
+}
+
+/* 🔹 Preparación */
+.recipe-instructions {
+  background-color: #fff7f2;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.recipe-instructions h3 {
+  color: #d66152;
+  border-bottom: 2px solid #d66152;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.instructions-list {
+  list-style: decimal;
   padding-left: 20px;
 }
 
-.recipe-page .recipe-steps li {
+.instructions-list li {
   margin-bottom: 10px;
 }
 
+/* 🔹 Botón */
 .recipe-page button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -66,3 +118,4 @@
 .recipe-page button:hover {
   background-color: #b35918;
 }
+

@@ -21,6 +21,16 @@ const RecipePage = () => {
 
       <img src={images[dessert.key]} alt={dessert.name} className="recipe-image" />
 
+    <section className="recipe-info">
+        <h3>Información</h3>
+        <ul className="info-list">
+          {dessert.info.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+    </section>
+
+
       <section className="recipe-ingredients">
         <h3>Ingredientes</h3>
         <ul className="ingredients-list">
