@@ -1,0 +1,30 @@
+/* Contenedor general de la página */
+.favorites-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título */
+.favorites-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #b47b4d;
+  text-align: center;
+}
+
+/* Mensaje cuando no hay favoritos */
+.favorites-page p {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+/* Grid de tarjetas de postres */
+.dessert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
