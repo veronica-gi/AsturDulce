@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Header.css"; // Asegúrate de que el CSS esté disponible
 
 export default function Header() {
@@ -7,7 +8,7 @@ export default function Header() {
       <div className="logo"><h1>🍰 AsturDulce</h1></div>
       <nav className="nav">
         <a href="/">Inicio</a>
-        <a href="/recetas">Recetas</a>
+        <Link to="/favorites">Favoritos</Link>
       </nav>
     </header>
   );

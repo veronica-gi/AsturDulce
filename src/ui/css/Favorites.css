@@ -1,9 +1,13 @@
 /* Contenedor general de la página */
 .favorites-page {
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
+
 
 /* Título */
 .favorites-page h2 {
