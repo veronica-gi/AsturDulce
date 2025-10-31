@@ -38,7 +38,7 @@ const DessertCard = ({ dessert }) => {
           className={`favorite-button ${isFavorite ? "active" : ""}`}
           onClick={() => toggleFavorite(dessert.id)}
         >
-          {isFavorite ? "💔 Quitar de favoritos" : "❤️ Añadir a favoritos"}
+          {isFavorite ? "💔 Quitar de favoritos" : "❤️"}
         </button>
       </div>
     </div>

@@ -19,8 +19,8 @@
   margin-bottom: 20px;
 }
 
-/* 🔹 Sección de información general */
-/* 🔹 Información (tiempos, raciones, etc.) */
+/* Sección de información general */
+/* Información (tiempos, raciones, etc.) */
 .recipe-info {
   background-color: #fff7f2;
   border-radius: 10px;
@@ -48,7 +48,7 @@
 }
 
 
-/* 🔹 Ingredientes */
+/* Ingredientes */
 .recipe-ingredients {
   background-color: #fff7f2;
   border-radius: 10px;
@@ -81,7 +81,7 @@
   left: 0;
 }
 
-/* 🔹 Preparación */
+/* Preparación */
 .recipe-instructions {
   background-color: #fff7f2;
   border-radius: 10px;
@@ -104,7 +104,7 @@
   margin-bottom: 10px;
 }
 
-/* 🔹 Botón */
+/* Botón */
 .recipe-page button {
   margin-top: 20px;
   padding: 10px 20px;
