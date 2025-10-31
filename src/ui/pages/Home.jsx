@@ -36,6 +36,27 @@ const Home = () => {
       <p>Descubre y cocina los dulces más típicos de Asturias.</p>
         </div>
 
+      <div className="welcome-icons">
+       <div className="icons-track">
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
+        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
+  
+      </div>
+    </div>
+
 
       <DessertsPage />
       <Footer />

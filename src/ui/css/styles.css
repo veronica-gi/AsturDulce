@@ -103,6 +103,36 @@ h1, h2, h3 {
   
 }
 
+/* iconos de postres en movimiento */
+.welcome-icons {
+   display: flex;        
+  width: 100vw;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+
+.icons-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;    
+  animation: scrollIcons 20s linear infinite;
+}
+
+.icons-track img {
+  height: 60px;           
+  width: auto;
+}
+
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
 
 
 
