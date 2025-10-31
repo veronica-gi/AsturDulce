@@ -15,22 +15,22 @@ const Filters = ({ filters, setFilters }) => {
       <label>
         Categoría:
         <select value={filters.category} onChange={handleCategoryChange}>
-          <option value="todas">Todas</option>
-          <option value="tartas">Tartas</option>
-          <option value="cremas y flanes">Cremas y Flanes</option>
-          <option value="pasteles">Pasteles</option>
-          <option value="galletas">Galletas</option>
-          <option value="dulce típico">Dulce típico</option>
+          <option value="Todas">Todas</option>
+          <option value="Tartas">Tartas</option>
+          <option value="Cremas y Flanes">Cremas y Flanes</option>
+          <option value="Pasteles">Pasteles</option>
+          <option value="Galletas">Galletas</option>
+          <option value="Dulce Típico">Dulce típico</option>
         </select>
       </label>
 
       <label>
         Dificultad:
         <select value={filters.difficulty} onChange={handleDifficultyChange}>
-          <option value="todas">Todas</option>
-          <option value="fácil">Fácil</option>
-          <option value="media">Media</option>
-          <option value="difícil">Difícil</option>
+          <option value="Todas">Todas</option>
+          <option value="Fácil">Fácil</option>
+          <option value="Media">Media</option>
+          <option value="Difícil">Difícil</option>
         </select>
       </label>
     </div>
