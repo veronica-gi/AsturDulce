@@ -134,5 +134,37 @@ h1, h2, h3 {
   }
 }
 
+/* Ajustes para pantallas pequeñas */
+.fixed-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;           
+  padding: 0; 
+            
+}
 
+.image-wrapper {
+  flex: 0 1 auto;
+}
 
+.image-wrapper img {
+  width: 100%;       
+  height: auto;      
+  display: block;    
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Ocultar laterales en móvil */
+@media (max-width: 767px) {
+  .image-wrapper.left,
+  .image-wrapper.right {
+    display: none;
+  }
+
+  .image-wrapper.center {
+    flex: 1 1 100%;
+  }
+}

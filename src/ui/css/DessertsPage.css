@@ -17,4 +17,23 @@
   margin-top: 2rem;
 }
 
+/* Diseño responsive para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .desserts-content {
+    padding: 3rem;
+  }
+  .desserts-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .desserts-content {
+    padding: 2rem;
+  }
+  .desserts-grid {
+    grid-template-columns: 1fr; /* 1 columna */
+    gap: 1.5rem;
+  }
+}
 

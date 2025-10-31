@@ -54,3 +54,17 @@
   text-decoration: underline; 
 }
 
+/* Diseño responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .dessert-card img {
+    height: 200px; /* más pequeña en móvil */
+  }
+
+  .dessert-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}
