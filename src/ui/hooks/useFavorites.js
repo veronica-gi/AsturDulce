@@ -1,18 +1,19 @@
-// src/ui/hooks/useFavorites.js
 import { useState, useEffect } from "react";
+import { desserts } from "../../core/data/desserts";
 
 export const useFavorites = () => {
+  // Estado de favoritos, inicializado desde localStorage
   const [favorites, setFavorites] = useState(() => {
     const stored = localStorage.getItem("favorites");
     return stored ? JSON.parse(stored) : [];
   });
 
-  // 🧠 Cada vez que cambian los favoritos, se guardan en localStorage
+  // Guardar en localStorage cada vez que cambian los favoritos
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
-  // ❤️ Añadir o quitar un postre de favoritos
+  // Añadir o quitar un postre de favoritos
   const toggleFavorite = (id) => {
     setFavorites((prev) =>
       prev.includes(id)
@@ -21,5 +22,11 @@ export const useFavorites = () => {
     );
   };
 
-  return { favorites, toggleFavorite };
+  // Filtrar los postres favoritos
+  const favoriteDesserts = desserts.filter((dessert) =>
+    favorites.includes(dessert.id)
+  );
+
+  return { favorites, toggleFavorite, favoriteDesserts };
 };
+

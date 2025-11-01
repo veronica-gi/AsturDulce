@@ -3,15 +3,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import DessertCard from "../components/DessertCard";
 import "../css/Favorites.css";
-import { desserts } from "../../core/data/desserts";
 import { useFavorites } from "../hooks/useFavorites";
 
 function FavoritesPage() {
-  const { favorites, toggleFavorite } = useFavorites();
-
-  const favoriteDesserts = desserts.filter(dessert =>
-    favorites.includes(dessert.id)
-  );
+  const { favoriteDesserts, toggleFavorite } = useFavorites();
 
   return (
     <div className="favorites-page">
@@ -24,7 +19,7 @@ function FavoritesPage() {
           <p>No tienes favoritos aún.</p>
         ) : (
           <div className="dessert-list">
-            {favoriteDesserts.map(dessert => (
+            {favoriteDesserts.map((dessert) => (
               <DessertCard
                 key={dessert.id}
                 dessert={dessert}
@@ -42,4 +37,5 @@ function FavoritesPage() {
 }
 
 export default FavoritesPage;
+
 
