@@ -4,7 +4,7 @@ import "../css/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2025 AsturDulce. Todos los derechos reservados.</p>
+      <p>&copy; 2025 AsturDulce. Desarrollado por Verónica García Iglesias. Todos los derechos reservados.</p>
     </footer>
   );
 };
