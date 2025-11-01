@@ -1,5 +1,4 @@
-// src/ui/pages/RecipePage.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { useDessertById } from "../hooks/useDessertById";
 import { images } from "../assets/images";
 import Header from "../components/Header";
@@ -8,6 +7,11 @@ import "../css/RecipePage.css";
 
 const RecipePage = () => {
   const dessert = useDessertById();
+
+  // 🔝 Forzar scroll al inicio al montar la página
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!dessert) return <p>Receta no encontrada.</p>;
 
@@ -57,5 +61,6 @@ const RecipePage = () => {
 };
 
 export default RecipePage;
+
 
 
