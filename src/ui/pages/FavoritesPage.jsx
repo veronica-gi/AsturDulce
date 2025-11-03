@@ -6,7 +6,7 @@ import "../css/Favorites.css";
 import { useFavorites } from "../hooks/useFavorites";
 
 function FavoritesPage() {
-  const { favoriteDesserts, toggleFavorite } = useFavorites();
+  const { favoriteDesserts, favorites, toggleFavorite } = useFavorites();
 
   return (
     <div className="favorites-page">
@@ -23,7 +23,7 @@ function FavoritesPage() {
               <DessertCard
                 key={dessert.id}
                 dessert={dessert}
-                isFavorite={true}
+                isFavorite={favorites.includes(dessert.id)}
                 onToggleFavorite={toggleFavorite}
               />
             ))}
@@ -37,5 +37,6 @@ function FavoritesPage() {
 }
 
 export default FavoritesPage;
+
 
 

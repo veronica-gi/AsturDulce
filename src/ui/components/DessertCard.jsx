@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { images } from "../assets/images";
-import { useFavorites } from "../hooks/useFavorites";
 import "../css/DessertCard.css";
 
-const DessertCard = ({ dessert }) => {
-  const { favorites, toggleFavorite } = useFavorites();
-  const isFavorite = favorites.includes(dessert.id);
-
+const DessertCard = ({ dessert, isFavorite, onToggleFavorite }) => {
   const shortDescription =
     (dessert.description || "").slice(0, 120) +
     ((dessert.description || "").length > 120 ? "..." : "");
@@ -34,7 +30,7 @@ const DessertCard = ({ dessert }) => {
       <div className="card-buttons">
         <button
           className={`favorite-button ${isFavorite ? "active" : ""}`}
-          onClick={() => toggleFavorite(dessert.id)}
+          onClick={() => onToggleFavorite(dessert.id)}
         >
           {isFavorite ? "💔 Quitar de favoritos" : "❤️"}
         </button>
@@ -44,6 +40,7 @@ const DessertCard = ({ dessert }) => {
 };
 
 export default DessertCard;
+
 
 
 
