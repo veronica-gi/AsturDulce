@@ -14,9 +14,12 @@
 }
 
 .recipe-page img {
-  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  width: 500px;       /* tamaño deseado */
+  max-width: 100%;    /* no se pase del contenedor en móviles */
+  height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 /* Sección de información general */
