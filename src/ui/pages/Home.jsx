@@ -5,12 +5,12 @@ import DessertsPage from "./DessertsPage";
 
 import "../css/styles.css";
 
-// Importar imágenes para producción
-import fotoSuperior1 from "../assets/imgs/foto_superior_1.jpg";
-import fotoSuperior2 from "../assets/imgs/foto_superior_2.jpg";
-import fotoSuperior3 from "../assets/imgs/foto_superior_3.jpg";
-import icono1 from "../assets/imgs/icono1.png";
-import icono2 from "../assets/imgs/icono2.png";
+// Imágenes desde la carpeta public (Vite) usando BASE_URL
+const fotoSuperior1 = import.meta.env.BASE_URL + "imgs/foto_superior_1.jpg";
+const fotoSuperior2 = import.meta.env.BASE_URL + "imgs/Foto_superior_2.jpg";
+const fotoSuperior3 = import.meta.env.BASE_URL + "imgs/foto_superior_3.jpg";
+const icono1 = import.meta.env.BASE_URL + "imgs/icono1.png";
+const icono2 = import.meta.env.BASE_URL + "imgs/icono2.png";
 
 const Home = () => {
   return (
@@ -38,14 +38,18 @@ const Home = () => {
 
       <div className="welcome-section">
         <h1>Bienvenida a AsturDulce</h1>
-        <p>Siéntate, sirve una taza de café y déjate llevar por el aroma de la repostería asturiana.</p>
-        <p>Aquí encontrarás los postres más dulces y tradicionales de nuestra tierra: arroz con leche, fayueles, casadielles, tartas y muchas más delicias que han pasado de generación en generación.</p>
+        <p>
+          Siéntate, sirve una taza de café y déjate llevar por el aroma de la repostería asturiana.
+        </p>
+        <p>
+          Aquí encontrarás los postres más dulces y tradicionales de nuestra tierra: arroz con leche, 
+          fayueles, casadielles, tartas y muchas más delicias que han pasado de generación en generación.
+        </p>
         <p>Descubre y cocina los dulces más típicos de Asturias.</p>
       </div>
 
       <div className="welcome-icons">
         <div className="icons-track">
-          {/* Repetimos los iconos usando las importaciones */}
           {Array(8).fill(0).map((_, i) => (
             <React.Fragment key={i}>
               <img src={icono1} alt="Porción de tarta" />
@@ -62,6 +66,11 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
 
 
 
