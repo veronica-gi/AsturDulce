@@ -5,6 +5,13 @@ import DessertsPage from "./DessertsPage";
 
 import "../css/styles.css";
 
+// Importar imágenes para producción
+import fotoSuperior1 from "../assets/imgs/foto_superior_1.jpg";
+import fotoSuperior2 from "../assets/imgs/foto_superior_2.jpg";
+import fotoSuperior3 from "../assets/imgs/foto_superior_3.jpg";
+import icono1 from "../assets/imgs/icono1.png";
+import icono2 from "../assets/imgs/icono2.png";
+
 const Home = () => {
   return (
     <div>
@@ -13,11 +20,11 @@ const Home = () => {
       {/* Tres imágenes fijas con efecto inclinación solo lateral */}
       <div className="fixed-images-container">
         <div className="image-wrapper left">
-          <img src="/src/ui/assets/imgs/foto_superior_3.jpg" alt="Copas de cristal" />
+          <img src={fotoSuperior3} alt="Copas de cristal" />
         </div>
 
         <div className="image-wrapper center">
-          <img src="/src/ui/assets/imgs/foto_superior_2.jpg" alt="Mesa de postres" />
+          <img src={fotoSuperior2} alt="Mesa de postres" />
           <div className="image-text">
             <p>Postres Asturianos</p>
             <p>Un rincón para disfrutar y compartir dulces tradicionales.</p>
@@ -25,38 +32,28 @@ const Home = () => {
         </div>
 
         <div className="image-wrapper right">
-          <img src="/src/ui/assets/imgs/foto_superior_1.jpg" alt="Plato con fresas" />
+          <img src={fotoSuperior1} alt="Plato con fresas" />
         </div>
       </div>
 
-        <div className="welcome-section">
-      <h1>Bienvenida a AsturDulce</h1>
-      <p>Siéntate, sirve una taza de café y déjate llevar por el aroma de la repostería asturiana.</p>
-      <p>Aquí encontrarás los postres más dulces y tradicionales de nuestra tierra: arroz con leche, fayueles, casadielles, tartas y muchas más delicias que han pasado de generación en generación.</p>
-      <p>Descubre y cocina los dulces más típicos de Asturias.</p>
-        </div>
+      <div className="welcome-section">
+        <h1>Bienvenida a AsturDulce</h1>
+        <p>Siéntate, sirve una taza de café y déjate llevar por el aroma de la repostería asturiana.</p>
+        <p>Aquí encontrarás los postres más dulces y tradicionales de nuestra tierra: arroz con leche, fayueles, casadielles, tartas y muchas más delicias que han pasado de generación en generación.</p>
+        <p>Descubre y cocina los dulces más típicos de Asturias.</p>
+      </div>
 
       <div className="welcome-icons">
-       <div className="icons-track">
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-        <img src="/src/ui/assets/imgs/icono2.png" alt="Magdalena" />
-        <img src="/src/ui/assets/imgs/icono1.png" alt="Porción de tarta" />
-  
+        <div className="icons-track">
+          {/* Repetimos los iconos usando las importaciones */}
+          {Array(8).fill(0).map((_, i) => (
+            <React.Fragment key={i}>
+              <img src={icono1} alt="Porción de tarta" />
+              <img src={icono2} alt="Magdalena" />
+            </React.Fragment>
+          ))}
+        </div>
       </div>
-    </div>
-
 
       <DessertsPage />
       <Footer />
@@ -65,6 +62,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
