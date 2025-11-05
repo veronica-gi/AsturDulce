@@ -9,6 +9,13 @@
 
 ---
 
+## 🚀 Demo en vivo
+
+Visita la app funcionando aquí:  
+👉 https://veronica-gi.github.io/AsturDulce/
+
+---
+
 ## 🌟 Tecnologías utilizadas
 
 - **React** (con hooks y componentes funcionales)  
