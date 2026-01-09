@@ -1,69 +1,69 @@
 # AsturDulce 🍰
 
-**AsturDulce** es una aplicación web de recetas de postres desarrollada con **React** y **Vite**, que permite:
+**AsturDulce** is a web application for dessert recipes developed with **React** y **Vite**, which allows you to:
 
-- Ver la lista de postres disponibles.
-- Filtrar postres por categoría y dificultad.
-- Añadir y quitar postres de tus favoritos.
-- Ver la receta completa con ingredientes e instrucciones paso a paso.
+- View the list of available desserts.
+- Filter desserts by category and difficulty.
+- Add and remove desserts from your favorites.
+- View the full recipe with ingredients and step-by-step instructions.
 
 ---
 
-## 🚀 Demo en vivo
+## 🚀 Live Demo
 
-Visita la app funcionando aquí:  
+Visit the app in action here:  
 👉 https://veronica-gi.github.io/AsturDulce/
 
 ---
 
-## 🌟 Tecnologías utilizadas
+## 🌟 Technologies Used
 
-- **React** (con hooks y componentes funcionales)  
+- **React** (with hooks and functional components)
 - **JavaScript**  
 - **CSS**  
-- **React Router** para la navegación entre páginas  
-- **Vite** como herramienta de desarrollo y bundler  
-- **LocalStorage** para almacenar favoritos  
+- **React Router** for page navigation  
+- **Vite** as a development tool and bundler  
+- **LocalStorage** to store favorites  
 
 ---
 
-## 🛠 Funcionalidades
+## 🛠 Features
 
-1. **Lista de postres:**  
-   Muestra todos los postres con imagen, nombre y descripción corta.  
+1. **Dessert list:**  
+   Displays all desserts with image, name, and a short description. 
 
-2. **Favoritos:**  
-   Permite añadir o quitar postres de favoritos desde la lista o desde la página de favoritos.  
+2. **Favorites:**  
+   Allows adding or removing desserts from favorites from the list or from the favorites page.
 
-3. **Filtro:**  
-   Filtra postres por categoría y dificultad.  
+3. **Filter:**  
+   Filters desserts by category and difficulty.  
 
-4. **Receta completa:**  
-   Cada postre tiene su propia página con ingredientes, instrucciones e información adicional.  
+4. **Full recipe:**  
+   Each dessert has its own page with ingredients, instructions, and additional information.  
 
 ---
 
-## ⚡ Instalación y uso
+## ⚡ Installation and Usage
 
-1. Clona el repositorio usando la URL de GitHub:  
+1. Clone the repository using the GitHub URL:  
    `https://github.com/veronica-gi/AsturDulce.git`
 
-2. Abre la terminal y entra en la carpeta del proyecto:  
+2. Open the terminal and navigate to the project folder:
    `cd AsturDulce`
 
-3. Instala las dependencias del proyecto:  
+3. Install the project dependencies: 
    `npm install`
 
-4. Inicia la aplicación en modo desarrollo:  
+4. Start the application in development mode: 
    `npm run dev`  
 
-   - La aplicación estará disponible en tu navegador, normalmente en `http://localhost:5173`.  
-   - Cada cambio que hagas en el código se reflejará automáticamente gracias al hot reload de Vite.
+   - The application will be available in your browser, usually at http://localhost:5173.  
+   - Any changes you make to the code will be automatically reflected thanks to Vite’s hot reload.
 
 ---
 
 
-## 👩‍💻 Autor
+## 👩‍💻 Author
 
 - **Verónica García Iglesias**  
 
